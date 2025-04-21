@@ -1,4 +1,4 @@
-package April.second;
+package april.second;
 
 public class CountPnY {
     boolean solution(String s) {

@@ -1,4 +1,4 @@
-package April.first;
+package april.first;
 
 public class PrimeSumOfThree {
     public int solution(int[] nums) {
