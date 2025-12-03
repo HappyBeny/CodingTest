@@ -1,18 +1,16 @@
 package december.first;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class SelectPokemon {
     public int solution(int[] nums) {
-        ArrayList<Integer> species = new ArrayList<>();
+
+        HashSet<Integer> hs = new HashSet<>();
+
         for (int i = 0; i < nums.length; i++) {
-            if (!species.contains(nums[i])) {
-                species.add(nums[i]);
-            }
+            hs.add(nums[i]);
         }
-        int speciesNum = species.toArray().length;
-        int answer = 0;
-        answer = Math.min(nums.length/2, speciesNum);
-        return answer;
+
+        return Math.min(nums.length / 2, hs.size());
     }
 }
